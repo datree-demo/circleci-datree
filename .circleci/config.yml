@@ -1,0 +1,16 @@
+orbs:
+  datree: datree/policy@volatile
+description: A circle-ci job to enforce Datree's pull request title convention rule
+jobs:
+  my_job:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - datree/pull-request-title-convention:
+          issue_tracker: jira
+version: 2.1
+workflows:
+  main:
+    jobs:
+      - my_job:
+          context: github-token-context
