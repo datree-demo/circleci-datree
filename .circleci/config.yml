@@ -1,5 +1,5 @@
 orbs:
-  datree: datree/policy@volatile
+  datree: datree/policy@1.0.6
 description: A circle-ci job to enforce Datree's pull request title convention rule
 jobs:
   my_job:
