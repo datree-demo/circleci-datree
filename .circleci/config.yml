@@ -12,4 +12,5 @@ version: 2.1
 workflows:
   main:
     jobs:
-      - my_job
+      - my_job:
+          context: github-token-context
