@@ -1,1 +1,1 @@
-console.log("Hello CircleCI & Datree Webinar!")
+console.log("Welcome to CircleCI & Datree Webinar!")
